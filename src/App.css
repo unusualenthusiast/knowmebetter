@@ -1,0 +1,9 @@
+body {
+    margin: 0px;
+    min-width: 800px;
+    overflow-x: auto;
+}
+:root {
+    --blackBackground: #1C1D20;
+    --grayFontColor: #5c5c5c;
+  }
