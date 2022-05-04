@@ -18,3 +18,76 @@ export const timeLineData = [
         role: "Software Engineer"
     }
 ];
+export const techStackData = {
+    total: {
+        name: "Total Experience",
+        experience: 7,
+        stackTypes: [
+            {
+                type: "Front End",
+                stacks: [
+                    {
+                        name: "React",
+                        experience: 5.5,
+                        icon: "FaReact"
+                    },
+                    {
+                        name: "Angular",
+                        experience: 0.5,
+                        icon: "FaAngular"
+                    },
+                    {
+                        name: "React Native",
+                        experience: 0.5,
+                        icon: "FaReact"
+                    },
+                ]
+            },
+            {
+                type: "Back End",
+                stacks: [
+                    {
+                        name: "Node",
+                        experience: 3,
+                        icon: "FaNodeJs"
+                    },
+                    {
+                        name: "Java",
+                        experience: 1,
+                        icon: "FaJava"
+                    }
+                ]
+            },
+            {
+                type: "Database",
+                stacks: [
+                    {
+                        name: "MongoDB",
+                        experience: 3,
+                        icon: "SiMongodb"
+                    },
+                    {
+                        name: "SQL DB",
+                        experience: 1,
+                        icon: "FaDatabase"
+                    }
+                ]
+            },
+            {
+                type: "Others",
+                stacks: [
+                    {
+                        name: "Splunk",
+                        experience: 1,
+                        icon: "SiSplunk"
+                    },
+                    {
+                        name: "Typescript",
+                        experience: 1,
+                        icon: "SiTypescript"
+                    }
+                ]
+            }
+        ]
+    }
+}

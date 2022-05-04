@@ -54,7 +54,10 @@
   margin-top: 50px;
   color: var(--grayFontColor);
 }
-#career > header {
-  padding: 100px 0px 50px 100px; 
+#career, #tech-stack {
+ padding: 100px 0px;
+}
+#career header, #tech-stack header {
+  padding: 50px 0px 50px 100px; 
   font-size: 50px;
 }

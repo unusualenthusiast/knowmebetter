@@ -1,8 +1,9 @@
 import React from 'react';
 import CareerTimeLineContent from './CareerTimeLineContent';
-import { timeLineData } from './constants';
+import { timeLineData, techStackData } from './constants';
 import './Home.css';
 import Timeline from './Timeline';
+import TechStack from './TechStack';
 
 function Home() {
   const name = "Allan M. Valooran";  
@@ -11,7 +12,7 @@ function Home() {
       <div id="home">
         <header>
           <nav><a href="#contact">Contact</a></nav>
-          <nav><a href="#projects">Projects</a></nav>
+          <nav><a href="#tech-stack">Tech Stack</a></nav>
           <nav><a href="#career">Career</a></nav>
         </header>
         <section>
@@ -30,7 +31,12 @@ function Home() {
         </header>
         <Timeline data={timeLineData} renderComponent={CareerTimeLineContent} />
       </div>
-      <div id="projects"></div>
+      <div id="tech-stack">
+        <header>
+          <span>Tech Stack</span>
+        </header>
+        <TechStack data={techStackData} />
+      </div>
       <div id="contact"></div>
     </main>
   );
