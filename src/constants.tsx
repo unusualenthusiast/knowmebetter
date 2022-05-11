@@ -61,7 +61,7 @@ export const navHeaderData: IteratableObject<string[], NavHeaderDataType> = {
 };
 export const homePageData: DynamicObject<string> = {
     "name": "Allan M. Valooran",
-    "shortDescription": "I am a full stack developer"
+    "shortDescription": "I'm a full stack developer"
 };
 export const careerTimeLineData: Array<CareerTimeLineDataType> = [
     {
@@ -187,6 +187,9 @@ export const techStackData: TechStackDataType = {
     }
 }
 export const contactData: DynamicObject<any> = {
+    "location": {
+        "id": "Chennai, Tamil Nadu, India"
+    },
     "email": {
         "id": "allanmvalooran@gmail.com"
     },

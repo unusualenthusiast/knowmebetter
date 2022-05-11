@@ -3,20 +3,22 @@ import { contactData, navHeaderData } from './constants';
 import './Contact.css';
 import { FaGithub, FaPhone, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import { GoLocation } from 'react-icons/go';
 
 function Contact() {
     const { label } = navHeaderData.data['contact'];
-    const { email, phone, github, linkedIn } = contactData;
+    const { location, email, phone, github, linkedIn } = contactData;
     return (
         <div id="contact">
             <header>
                 <span>{label}</span>
             </header>
             <main>
-                <div id="photo">
-                    <img src="pic.png"></img>
-                </div>
                 <div id="contact-details">
+                    <div>
+                        <GoLocation />
+                        <span>{location.id}</span>
+                    </div>
                     <div id="email">
                         <MdEmail />
                         <span>{email.id}</span>
