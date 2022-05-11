@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 body {
     margin: 0px;
     min-width: 800px;
     overflow-x: auto;
+    font-family: 'Josefin Sans', cursive;
 }
+
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --blackBackground: #1C1D20;
     --grayFontColor: #5c5c5c;
-  }
+}

@@ -1,3 +1,13 @@
+#tech-stack {
+    padding: 50px 0px;
+    position: relative;
+}
+
+#tech-stack header {
+    padding: 20px 0px 0px 100px;
+    font-size: 50px;
+}
+
 #techstack-wrapper {
     padding: 0px 50px 0px 100px;
     display: flex;
@@ -36,6 +46,7 @@
 .stack-row-content {
     display: inline;
     text-align: center;
+    transition: 1s;
 }
 
 .stack-row-content svg {
@@ -48,6 +59,7 @@
     justify-content: center;
     margin-bottom: 25px;
     margin-right: 20px;
+    transition: 1s;
 }
 
 .stack-row-progress div:first-child {
@@ -68,15 +80,60 @@
     border-right: 1px solid white;
 }
 
-.total.stack-type-row {
+.techstack-sticky-content {
     position: sticky;
     top: 0px;
     background: white;
     border-bottom: 3px solid #ebebeb;
 }
 
+#techstack-by {
+    text-align: right;
+    width: 100%;
+    right: 100px;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+#techstack-by>div {
+    display: inline-block;
+    margin-right: 20px;
+    opacity: 0.5;
+}
+
+#techstack-by>div.active {
+    opacity: 1;
+}
+
+#techstack-by-button {
+    width: 80px;
+    height: 32px;
+    background-color: gray;
+    border-radius: 20px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+
+#techstack-by-button>div {
+    width: 28px;
+    height: 28px;
+    background: #dddddd;
+    border-radius: 50%;
+    transition: 1s;
+    position: absolute;
+    top: 2px;
+}
+
+#techstack-by-button>div.globe-left {
+    left: 2px;
+}
+
+#techstack-by-button>div.globe-right {
+    left: 50px;
+}
 .total.stack-type-row .stack-row .stack-row-content div:last-child {
     margin-top: 10px;
     text-align: right;
     font-weight: bold;
-}
+}   
