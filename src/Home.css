@@ -59,6 +59,7 @@
   #home>header {
     justify-content: space-between;
     width: 100%;
+    padding: 0px 20px;
   }
 
   #home>header>nav {
@@ -70,8 +71,16 @@
     display: none;
   }
 
+  #home>section>section#name_description {
+    padding-bottom: 100px;
+  }
+
   #home>section>section#name_description #name {
-    font-size: 70px;
+    font-size: 60px;
+  }
+
+  #home>section>section#name_description #short-description {
+    font-size: 30px;
   }
 
 }
@@ -109,13 +118,3 @@
   }
 
 }
-
-
-
-
-
-
-
-
-
-

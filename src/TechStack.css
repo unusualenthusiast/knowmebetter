@@ -3,11 +3,6 @@
     position: relative;
 }
 
-#tech-stack header {
-    padding: 20px 0px 0px 100px;
-    font-size: 50px;
-}
-
 #techstack-wrapper {
     padding: 0px 50px 0px 100px;
     display: flex;
@@ -87,14 +82,6 @@
     border-bottom: 3px solid #ebebeb;
 }
 
-#techstack-by {
-    text-align: right;
-    width: 100%;
-    right: 100px;
-    font-size: 25px;
-    padding-top: 20px;
-}
-
 #techstack-by>div {
     display: inline-block;
     margin-right: 20px;
@@ -111,7 +98,6 @@
     background-color: gray;
     border-radius: 20px;
     position: relative;
-    top: 5px;
     cursor: pointer;
 }
 
@@ -132,8 +118,74 @@
 #techstack-by-button>div.globe-right {
     left: 50px;
 }
+
 .total.stack-type-row .stack-row .stack-row-content div:last-child {
     margin-top: 10px;
     text-align: right;
     font-weight: bold;
-}   
+}
+
+/* Mobile View */
+@media only screen and (max-width: 600px) {
+
+    #tech-stack header {
+        padding: 0px 0px 40px 20px;
+        font-size: 35px;
+    }
+
+    #techstack-wrapper {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #techstack-by {
+        width: 100%;
+        font-size: 20px;
+        padding: 20px 10px 0px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #techstack-by-button {
+        bottom: 5px;
+    }
+
+    .stack-type-label {
+        display: none;
+    }
+
+    .stack-type-content {
+        width: 100%;
+    }
+
+}
+
+/* Laptop View  */
+@media only screen and (min-width: 601px) {
+
+    #tech-stack header {
+        padding: 20px 0px 50px 100px;
+        font-size: 50px;
+    }
+
+    #techstack-wrapper {
+        padding: 0px 50px 0px 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #techstack-by {
+        text-align: right;
+        width: 100%;
+        right: 100px;
+        font-size: 25px;
+        padding-top: 20px;
+    }
+
+    #techstack-by-button {
+        top: 5px;
+    }
+
+}
