@@ -57,36 +57,38 @@ function TechStack() {
                             </div>
                         </div>
                     </div>
-                    {order.map((stackType: any, ind: number) => {
-                        const { label: stackTypeLabel, order: _order, data: stackTypeData } = data[stackType];
-                        const stackTypeOrder = _order[mode];
-                        return (
-                            <div className="stack-type-row" key={`stack-type-row-${ind}`}>
-                                <div className="stack-type-label"><span>{stackTypeLabel}</span></div>
-                                <div className="stack-type-content">
-                                    {stackTypeOrder.map((stack: any, index: number) => {
-                                        const { label, icon } = stackTypeData[stack];
-                                        const stackLevel = stackTypeData[stack][mode]
-                                        const Icon = Component[icon];
-                                        const progressStyle = {
-                                            width: `${(stackLevel / totalLevel) * 100}%`
-                                        }
-                                        return (
-                                            <div className="stack-row" key={`stack-row-${index}`}>
-                                                <div className="stack-row-progress" style={progressStyle}>
-                                                    <div></div>
+                    <div id="stack-type-row-wrapper">
+                        {order.map((stackType: any, ind: number) => {
+                            const { label: stackTypeLabel, order: _order, data: stackTypeData } = data[stackType];
+                            const stackTypeOrder = _order[mode];
+                            return (
+                                <div className="stack-type-row" key={`stack-type-row-${ind}`}>
+                                    <div className="stack-type-label"><span>{stackTypeLabel}</span></div>
+                                    <div className="stack-type-content">
+                                        {stackTypeOrder.map((stack: any, index: number) => {
+                                            const { label, icon } = stackTypeData[stack];
+                                            const stackLevel = stackTypeData[stack][mode]
+                                            const Icon = Component[icon];
+                                            const progressStyle = {
+                                                width: `${(stackLevel / totalLevel) * 100}%`
+                                            }
+                                            return (
+                                                <div className="stack-row" key={`stack-row-${index}`}>
+                                                    <div className="stack-row-progress" style={progressStyle}>
+                                                        <div></div>
+                                                    </div>
+                                                    <div className="stack-row-content">
+                                                        <div><Icon /></div>
+                                                        <div>{label}</div>
+                                                    </div>
                                                 </div>
-                                                <div className="stack-row-content">
-                                                    <div><Icon /></div>
-                                                    <div>{label}</div>
-                                                </div>
-                                            </div>
-                                        )
-                                    })}
+                                            )
+                                        })}
+                                    </div>
                                 </div>
-                            </div>
-                        )
-                    })}
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         </div>
